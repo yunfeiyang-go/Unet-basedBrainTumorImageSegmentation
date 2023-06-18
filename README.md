@@ -1,4 +1,4 @@
-# Unet-basedBrainTumorImageSegmentation
+# Unet-based Brain Tumor Image Segmentation
 BrainTumor Image Segmentation Using U-Net and Improved Algorithm
 
 Image segmentation is the process of dividing an image into multiple sub-regions for better understanding, processing and analysis. In fields such as medical imaging, image segmentation is widely used for diagnosis and treatment. Through this optimized processing, doctors can provide more detailed diagnostic results and better guide treatment procedures, improving treatment effectiveness.
