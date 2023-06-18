@@ -4,8 +4,8 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 # 设置数据路径
-#data_path = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/'
-data_path = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/'
+#data_path = './Brain/3-BrainTumor/'
+data_path = './Brain/3-BrainTumor/enhance/'
 #image_dir = 'iexp/'
 #mask_dir = 'mexp/'
 image_dir = 'augmented_images/'
