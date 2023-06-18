@@ -4,9 +4,9 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 # 设置数据路径
-image_folder = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/augmented_images/'
-mask_folder = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/augmented_masks/'
-#data_path = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/'
+image_folder = './Brain/3-BrainTumor/enhance/augmented_images/'
+mask_folder = './Brain/3-BrainTumor/enhance/augmented_masks/'
+#data_path = './bioalgorithm/Brain/3-BrainTumor/enhance/'
 #image_dir = 'augmented_images/'
 #mask_dir = 'augmented_masks/'
 
@@ -132,7 +132,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 加载模型
 model = UNet(input_shape[0], 1, True).to(device)
-model.load_state_dict(torch.load("/home/ug2020/ug520111910171/bioalgorithm/Brain/U-Net/model.pth"))
+model.load_state_dict(torch.load("./Brain/U-Net/model.pth"))
 
 # 定义transforms
 transform = transforms.Compose([
@@ -235,7 +235,7 @@ def predict_folder(image_folder, mask_folder):
 import sys
 
 # 在屏幕和文件中输出
-sys.stdout = open('/home/ug2020/ug520111910171/bioalgorithm/Brain/U-Net/test.txt', 'w')
+sys.stdout = open('./Brain/U-Net/test.txt', 'w')
 
 # 调用 predict_folder 函数对文件夹内的图片进行预测并输出结果
 predict_folder(image_folder, mask_folder)
