@@ -9,8 +9,8 @@
 source /home/apps/anaconda3/etc/profile.d/conda.sh
 conda activate torch12
 # 执行Python脚本
-python /home/ug2020/ug520111910171/bioalgorithm/Brain/U-Net/test.py
-python /home/ug2020/ug520111910171/bioalgorithm/Brain/U-Net/test_only_mask.py
+python ./Brain/U-Net/test.py
+python ./Brain/U-Net/test_only_mask.py
 
 # 释放GPU资源
 #nvidia-smi --gpu-reset -i 0
