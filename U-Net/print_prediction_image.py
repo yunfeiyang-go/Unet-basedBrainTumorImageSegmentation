@@ -4,9 +4,9 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 # 设置数据路径
-image_folder = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/augmented_images/'
-mask_folder = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/augmented_masks/'
-#data_path = '/home/ug2020/ug520111910171/bioalgorithm/Brain/3-BrainTumor/enhance/'
+image_folder = './Brain/3-BrainTumor/enhance/augmented_images/'
+mask_folder = './Brain/3-BrainTumor/enhance/augmented_masks/'
+#data_path = './Brain/3-BrainTumor/enhance/'
 #image_dir = 'augmented_images/'
 #mask_dir = 'augmented_masks/'
 
@@ -156,7 +156,7 @@ def predict_image(image_path, mask_path):
     image_filename = os.path.basename(image_path)
     
     # 设置输出路径
-    output_dir = '/home/ug2020/ug520111910171/bioalgorithm/Brain/U-Net/outimage/'
+    output_dir = './Brain/U-Net/outimage/'
     output_path = os.path.join(output_dir, image_filename)
     
     # 打开图片和mask文件
@@ -251,7 +251,7 @@ def predict_folder(image_folder, mask_folder):
 #import sys
 
 # 在屏幕和文件中输出
-#sys.stdout = open('/home/ug2020/ug520111910171/bioalgorithm/Brain/U-Net/test.txt', 'w')
+#sys.stdout = open('./Brain/U-Net/test.txt', 'w')
 
 # 调用 predict_folder 函数对文件夹内的图片进行预测并输出结果
 predict_folder(image_folder, mask_folder)
